@@ -1,0 +1,10 @@
+{
+  "name": "node-express-demo",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Adam Whitehouse",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
