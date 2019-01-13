@@ -1,12 +1,12 @@
 const express = require('express')
 const { name, version } = require('./package')
-const appRouter = require('./router')
-const errorHandler = require('./errorHandler')
+const router = require('./router')
+const { errorHandler } = require('./middleware')
 
 const app = express()
 const port = process.env.PORT || 3000
 
-appRouter.registerRoutes(app)
+app.use('/api', router)
 
 app.use(errorHandler)
 

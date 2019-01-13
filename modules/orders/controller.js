@@ -10,7 +10,7 @@ class OrdersController {
 		res.send(this.orders)
 	}
 
-	getById(req, res, next) {
+	getById(req, res) {
 		const id = parseInt(req.params.id, 10)
 		const order = this.orders.find(o => o.id === id)
 
